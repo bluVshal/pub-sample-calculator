@@ -3,7 +3,7 @@ import React from 'react';
 const Screen = () => {
     return (
         <div>
-            <p> Screen </p>
+            <p style={{color:'white'}}> Screen </p>
         </div>
     );
 };

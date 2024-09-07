@@ -7,7 +7,6 @@ import Memory from '../Elements/Memory/Memory';
 const Assemble = () => {
     return(
         <div>
-            <p>Assembled calculator will be here</p>
             <Screen />
             <Memory />
             <Buttons />

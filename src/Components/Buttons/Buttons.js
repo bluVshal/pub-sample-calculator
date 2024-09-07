@@ -14,7 +14,7 @@ const Buttons = () => {
     };
 
     const populateoperationButtons = () => {
-        const arrayOp = ['.','+','-','×','÷','±','%','00'];
+        const arrayOp = ['.','+','-','×','÷','±','%','00','√'];
 
         return arrayOp.map((op) => <Button key={op} sx={{
             color: '#ECF018',
