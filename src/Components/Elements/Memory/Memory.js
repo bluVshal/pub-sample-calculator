@@ -10,10 +10,16 @@ const Memory = () => {
     const populateMemButtons = () =>{
         const arrayMem = ['MR','M+','M-','CLS','CE'];
 
-        return arrayMem.map((mem) => <Button key={mem} onClick={setBtnValue(mem)} sx={{
-            color: '#00A86B',
-            fontSize: '1.5rem'
-            }}>{mem}</Button>);
+        return arrayMem.map((mem) => 
+            <Button 
+                key={mem} 
+                onClick={setBtnValue(mem)} 
+                sx={{
+                    color: '#00A86B',
+                    fontSize: '1.5rem'
+                    }}>
+            {mem}
+            </Button>);
     };
 
     return (
@@ -21,7 +27,6 @@ const Memory = () => {
             {populateMemButtons()}
         </div>
     );
-
 };
 
 export default Memory;

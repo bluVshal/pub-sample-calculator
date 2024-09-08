@@ -5,27 +5,43 @@ import '../Styles/calcStyle.css';
 const Buttons = () => {
    
     const populateNumberButtons = () =>{
-        const arrayNum = [0,1,2,3,4,5,6,7,8,9];
+        const arrayNum = ['.','00','0','3','2','1','6','5','4','9','8','7'];
 
-        return arrayNum.map((numbr) => <Button key={numbr} sx={{
-            color: '#EE4421',
-            fontSize: '1.5rem'
-            }}>{numbr}</Button>);
+        return arrayNum.reverse().map((numbr) => 
+            <Button 
+                key={numbr}
+                sx={{
+                    fontSize: '1.5rem',                    
+                    backgroundColor:'#014D4E',
+                    margin:'0 0 0.6rem 0.6rem'
+                }}>
+                {numbr}
+            </Button>);
     };
 
     const populateoperationButtons = () => {
-        const arrayOp = ['.','+','-','×','÷','±','%','00','√'];
+        const arrayOp = ['+','-','×','÷','±','%','√'];
 
-        return arrayOp.map((op) => <Button key={op} sx={{
-            color: '#ECF018',
-            fontSize: '1.75rem'
-            }}>{op}</Button>);
+        return arrayOp.map((op) => 
+            <Button 
+                key={op}
+                sx={{
+                    fontSize: '1.5rem',
+                    backgroundColor:'#014D4E',
+                    margin:'0 0 0.6rem 0.6rem'
+                }}>
+                {op}
+            </Button>);
     };
 
     return(
-        <div className="btn-container">     
-            {populateNumberButtons()}
-            {populateoperationButtons()}
+        <div className="btn-container">
+            <div className='right-buttons'>
+                {populateNumberButtons()}
+            </div>
+            <div className='op-buttons'>
+                {populateoperationButtons()}
+            </div>
         </div>
     );
 
