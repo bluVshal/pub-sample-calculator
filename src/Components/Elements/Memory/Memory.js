@@ -14,9 +14,9 @@ const Memory = () => {
                 key={mem} 
                 onClick={setBtnValue(mem)} 
                 sx={{
-                    color: '#592720',
+                    color: '#b2beb5',
                     fontSize: '1.5rem',
-                    background:'#A32638',
+                    backgroundColor:'#A32638',
                     border: 'solid transparent',
                     borderRadius: '16px',
                     borderWidth: '0 0 4px',
@@ -25,24 +25,12 @@ const Memory = () => {
                     transition: 'filter 2s',
                     '&:hover': {
                         boxShadow: '0 0 10px #9ecaed',
-                        background: '#DDADAF',
+                        backgroundColor: '#DDADAF',
+                        color: '#555555',
                     },
                     '&:active': {
                         borderWidth: '4px 0 0',
-                        background: '#DDADAF',
-                    },
-                    '&:after': {
-                        backgroundClip: 'padding-box',
                         backgroundColor: '#DDADAF',
-                        border: 'solid transparent',
-                        borderRadius: '16px',
-                        borderWidth: '0 0 4px',
-                        bottom: '-4px',
-                        left: '0',
-                        position: 'absolute',
-                        right: '0',
-                        top: '0',
-                        zIndex: '-1'
                     }
                     }}>
             {mem}

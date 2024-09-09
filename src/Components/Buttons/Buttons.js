@@ -26,19 +26,6 @@ const Buttons = () => {
                     '&:active': {
                         borderWidth: '4px 0 0',
                         background: '#40e0d0',
-                    },
-                    '&:after': {
-                        backgroundClip: 'padding-box',
-                        backgroundColor: '#40e0d0',
-                        border: 'solid transparent',
-                        borderRadius: '16px',
-                        borderWidth: '0 0 4px',
-                        bottom: '-4px',
-                        left: '0',
-                        position: 'absolute',
-                        right: '0',
-                        top: '0',
-                        zIndex: '-1'
                     }
                 }}>
                 {numbr}
@@ -59,8 +46,8 @@ const Buttons = () => {
                     borderWidth: '0 0 4px',
                     boxSizing: 'border-box',
                     width:'2.5rem',
-                    height:'3.45rem',
-                    margin:'0 0 0.5rem 0.5rem',
+                    height:'3.65rem',
+                    margin:'0 0 0.6rem 0.5rem',
                     transition: 'filter 2s',
                     '&:hover': {
                         boxShadow: '0 0 10px #9ecaed',
@@ -69,19 +56,6 @@ const Buttons = () => {
                     '&:active': {
                         borderWidth: '4px 0 0',
                         background: '#91A91F',
-                    },
-                    '&:after': {
-                        backgroundClip: 'padding-box',
-                        backgroundColor: '#91A91F',
-                        border: 'solid transparent',
-                        borderRadius: '16px',
-                        borderWidth: '0 0 4px',
-                        bottom: '-4px',
-                        left: '0',
-                        position: 'absolute',
-                        right: '0',
-                        top: '0',
-                        zIndex: '-1'
                     }
                 }}>
                 {op}
@@ -107,27 +81,15 @@ const Buttons = () => {
                     transition: 'filter 2s',
                     width:'88%',
                     height:'3.4rem',
-                    transform: 'translateZ(0)',
+                    outline: 'none',
                     '&:hover': {
                         boxShadow: '0 0 10px #9ecaed',
                         background: '#91A91F',
                     },
                     '&:active': {
                         borderWidth: '4px 0 0',
-                        background: '#91A91F',
-                    },
-                    '&:after': {
-                        backgroundClip: 'padding-box',
-                        backgroundColor: '#91A91F',
-                        border: 'solid transparent',
-                        borderRadius: '16px',
-                        borderWidth: '0 0 4px',
-                        bottom: '-4px',
-                        left: '0',
-                        position: 'absolute',
-                        right: '0',
-                        top: '0',
-                        zIndex: '-1'
+                        background: '#91A91F',                        
+                        transform: 'translateY(0)',
                     }
                   }}>
                   =
