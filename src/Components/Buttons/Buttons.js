@@ -5,7 +5,7 @@ import '../Styles/calcStyle.css';
 const Buttons = () => {
    
     const populateNumberButtons = () =>{
-        const arrayNum = ['.','00','0','3','2','1','6','5','4','9','8','7'];
+        const arrayNum = ['00','0','.','3','2','1','6','5','4','9','8','7'];
 
         return arrayNum.reverse().map((numbr) => 
             <Button 
@@ -20,7 +20,7 @@ const Buttons = () => {
     };
 
     const populateoperationButtons = () => {
-        const arrayOp = ['+','-','×','÷','±','%','√'];
+        const arrayOp = ['+','-','×','÷','±','%','√', 'x²', '𝝅'];
 
         return arrayOp.map((op) => 
             <Button 
@@ -36,11 +36,20 @@ const Buttons = () => {
 
     return(
         <div className="btn-container">
-            <div className='right-buttons'>
+            <div className='right-buttons-container'>
                 {populateNumberButtons()}
             </div>
-            <div className='op-buttons'>
+            <div className='op-buttons-container'>
                 {populateoperationButtons()}
+                <Button 
+                  sx={{
+                    marginLeft:'0.5em',
+                    fontSize: '1.5rem',
+                    backgroundColor:'#014D4E',
+                    width:'88%'
+                  }}>
+                  =
+                </Button>
             </div>
         </div>
     );
