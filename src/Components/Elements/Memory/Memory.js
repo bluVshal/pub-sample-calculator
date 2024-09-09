@@ -4,7 +4,6 @@ import Button from '@mui/material/Button';
 const Memory = () => {
 
     const setBtnValue = (mem) => {
-        console.log("Inside");
     };
 
     const populateMemButtons = () =>{
@@ -15,10 +14,36 @@ const Memory = () => {
                 key={mem} 
                 onClick={setBtnValue(mem)} 
                 sx={{
-                    color: '#00A86B',
+                    color: '#592720',
                     fontSize: '1.5rem',
-                    backgroundColor:'#7A5000',
-                    margin:'0 0 0.8rem 0.5rem'
+                    background:'#A32638',
+                    border: 'solid transparent',
+                    borderRadius: '16px',
+                    borderWidth: '0 0 4px',
+                    boxSizing: 'border-box',
+                    margin:'0 0 0.8rem 0.5rem',
+                    transition: 'filter 2s',
+                    '&:hover': {
+                        boxShadow: '0 0 10px #9ecaed',
+                        background: '#DDADAF',
+                    },
+                    '&:active': {
+                        borderWidth: '4px 0 0',
+                        background: '#DDADAF',
+                    },
+                    '&:after': {
+                        backgroundClip: 'padding-box',
+                        backgroundColor: '#DDADAF',
+                        border: 'solid transparent',
+                        borderRadius: '16px',
+                        borderWidth: '0 0 4px',
+                        bottom: '-4px',
+                        left: '0',
+                        position: 'absolute',
+                        right: '0',
+                        top: '0',
+                        zIndex: '-1'
+                    }
                     }}>
             {mem}
             </Button>);
