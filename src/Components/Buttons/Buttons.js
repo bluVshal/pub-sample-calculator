@@ -26,9 +26,11 @@ const Buttons = () => {
             <Button 
                 key={op}
                 sx={{
-                    fontSize: '1.5rem',
+                    fontSize: '1.75rem',
                     backgroundColor:'#014D4E',
-                    margin:'0 0 0.6rem 0.6rem'
+                    width:'2.5rem',
+                    height:'3.45rem',
+                    margin:'0 0 0.5rem 0.5rem'
                 }}>
                 {op}
             </Button>);
@@ -43,10 +45,11 @@ const Buttons = () => {
                 {populateoperationButtons()}
                 <Button 
                   sx={{
-                    marginLeft:'0.5em',
-                    fontSize: '1.5rem',
+                    marginLeft:'0.45em',
+                    fontSize: '1.75rem',
                     backgroundColor:'#014D4E',
-                    width:'88%'
+                    width:'88%',
+                    height:'3.4rem'
                   }}>
                   =
                 </Button>

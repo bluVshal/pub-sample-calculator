@@ -16,7 +16,9 @@ const Memory = () => {
                 onClick={setBtnValue(mem)} 
                 sx={{
                     color: '#00A86B',
-                    fontSize: '1.5rem'
+                    fontSize: '1.5rem',
+                    backgroundColor:'#7A5000',
+                    margin:'0 0 0.8rem 0.5rem'
                     }}>
             {mem}
             </Button>);
