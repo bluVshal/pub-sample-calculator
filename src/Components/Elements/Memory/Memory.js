@@ -17,7 +17,7 @@ const Memory = () => {
                     color: '#b2beb5',
                     fontSize: '1.5rem',
                     backgroundColor:'#A32638',
-                    border: 'solid transparent',
+                    border: 'solid',
                     borderRadius: '16px',
                     borderWidth: '0 0 4px',
                     boxSizing: 'border-box',
@@ -38,7 +38,7 @@ const Memory = () => {
     };
 
     return (
-        <div>
+        <div className="mem-container">
             {populateMemButtons()}
         </div>
     );

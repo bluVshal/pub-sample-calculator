@@ -14,7 +14,7 @@ const Buttons = () => {
                     fontSize: '1.5rem',                    
                     backgroundColor:'#014D4E',
                     margin:'0 0 0.6rem 0.6rem',
-                    border: 'solid transparent',
+                    border: 'solid',
                     borderRadius: '16px',
                     borderWidth: '0 0 4px',
                     boxSizing: 'border-box',
@@ -41,7 +41,7 @@ const Buttons = () => {
                 sx={{
                     fontSize: '1.75rem',
                     backgroundColor:'#314D1D',
-                    border: 'solid transparent',
+                    border: 'solid',
                     borderRadius: '16px',
                     borderWidth: '0 0 4px',
                     boxSizing: 'border-box',
@@ -72,14 +72,14 @@ const Buttons = () => {
                 <Button 
                   sx={{                   
                     backgroundColor:'#648C11',
-                    border: 'solid transparent',
+                    border: 'solid',
                     borderRadius: '16px',
                     borderWidth: '0 0 4px',
                     boxSizing: 'border-box',
                     fontSize: '1.75rem',                    
                     marginLeft:'0.45em',                  
                     transition: 'filter 2s',
-                    width:'88%',
+                    width:'13rem',
                     height:'3.4rem',
                     outline: 'none',
                     '&:hover': {
