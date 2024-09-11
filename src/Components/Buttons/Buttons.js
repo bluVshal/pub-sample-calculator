@@ -11,7 +11,8 @@ const Buttons = () => {
             <Button 
                 key={numbr}
                 sx={{
-                    fontSize: '1.5rem',                    
+                    fontSize: '1.5rem',
+                    fontFamily: "'Urbanist', system-ui",               
                     backgroundColor:'#014D4E',
                     margin:'0 0 0.6rem 0.6rem',
                     border: 'solid',
@@ -40,6 +41,7 @@ const Buttons = () => {
                 key={op}
                 sx={{
                     fontSize: '1.75rem',
+                    fontFamily: "'Urbanist', system-ui",
                     backgroundColor:'#314D1D',
                     border: 'solid',
                     borderRadius: '16px',
@@ -76,7 +78,8 @@ const Buttons = () => {
                     borderRadius: '16px',
                     borderWidth: '0 0 4px',
                     boxSizing: 'border-box',
-                    fontSize: '1.75rem',                    
+                    fontSize: '1.75rem',
+                    fontFamily: "'Urbanist', system-ui",
                     marginLeft:'0.45em',                  
                     transition: 'filter 2s',
                     width:'13rem',

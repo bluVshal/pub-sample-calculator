@@ -16,6 +16,7 @@ const Memory = () => {
                 sx={{
                     color: '#b2beb5',
                     fontSize: '1.5rem',
+                    fontFamily: "'Urbanist', system-ui",
                     backgroundColor:'#A32638',
                     border: 'solid',
                     borderRadius: '16px',

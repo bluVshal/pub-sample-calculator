@@ -52,3 +52,10 @@
     box-shadow: 3px 15px 10px inset;
     background-color:#524e4e
 }
+
+.screen-display{
+    color: ivory;
+    font-size: 1.7rem;
+    font-family: 'Orbitron', sans-serif;
+    align-content:end;
+}
