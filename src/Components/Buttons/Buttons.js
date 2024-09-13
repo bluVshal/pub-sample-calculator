@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useReducer, useState } from 'react';
 import Button from '@mui/material/Button';
 import '../Styles/calcStyle.css';
 
 const Buttons = () => {
-   
+    
     const populateNumberButtons = () =>{
         const arrayNum = ['00','0','.','3','2','1','6','5','4','9','8','7'];
 
@@ -34,7 +34,7 @@ const Buttons = () => {
     };
 
     const populateoperationButtons = () => {
-        const arrayOp = ['+','-','×','÷','±','%','√', 'x²', '𝝅'];
+        const arrayOp = ['+','-','×','÷','±','%','√', '𝑥²', '𝝅'];
 
         return arrayOp.map((op) => 
             <Button 
