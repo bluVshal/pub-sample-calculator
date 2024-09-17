@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.line-mem{
+    color: ivory;
+    font-size: 0.75rem;
+}
+
 .line-one{
     line-height: 0.5rem;
 }

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useReducer, useState } from 'react';
 import Button from '@mui/material/Button';
 
 const Memory = () => {
 
-    const setBtnValue = (mem) => {
+    const [mem, setMem] = useState('');
+
+    const setBtnValue = () => {
+      //  setMem('M')
     };
 
     const populateMemButtons = () =>{
@@ -12,7 +15,7 @@ const Memory = () => {
         return arrayMem.map((mem) => 
             <Button 
                 key={mem} 
-                onClick={setBtnValue(mem)} 
+                onClick={setBtnValue()} 
                 sx={{
                     color: '#b2beb5',
                     fontSize: '1.5rem',
@@ -30,8 +33,9 @@ const Memory = () => {
                         color: '#555555',
                     },
                     '&:active': {
-                        borderWidth: '4px 0 0',
+                        borderWidth: '0 0 0',
                         backgroundColor: '#DDADAF',
+                        transform: 'translateY(4)'
                     }
                     }}>
             {mem}

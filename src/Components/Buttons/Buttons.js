@@ -25,7 +25,7 @@ const Buttons = () => {
                         background: '#40e0d0',
                     },
                     '&:active': {
-                        borderWidth: '4px 0 0',
+                        borderWidth: '0 0 0',
                         background: '#40e0d0',
                     }
                 }}>
@@ -56,7 +56,7 @@ const Buttons = () => {
                         background: '#91A91F',
                     },
                     '&:active': {
-                        borderWidth: '4px 0 0',
+                        borderWidth: '0 0 0',
                         background: '#91A91F',
                     }
                 }}>
@@ -90,9 +90,9 @@ const Buttons = () => {
                         background: '#91A91F',
                     },
                     '&:active': {
-                        borderWidth: '4px 0 0',
+                        borderWidth: '0 0 0',
                         background: '#91A91F',                        
-                        transform: 'translateY(0)',
+                        transform: 'translateY(0)'
                     }
                   }}>
                   =
